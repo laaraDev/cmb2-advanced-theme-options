@@ -1,0 +1,27 @@
+.repeat table tr {
+	display: table-row;
+}
+.cmb-type-repeatable-group .cmb-th,
+.cmb-type-repeatable-group .cmb-td {
+    width: 100% !important;
+    display: block !important;
+}
+.repeat table tbody tr td:first-child {
+    width: 6%;
+}
+.repeat table > tbody > tr > td:first-child > * {
+    width: 100%;
+    margin: 2px;
+}
+.repeat table > tbody > tr > td:first-child > .move-steps {
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}
+.repeat textarea {
+    width: 100% !important;
+}
+.repeat span.move.btn.btn-info img {
+    color: #fff;
+    width: 100% !important;
+}

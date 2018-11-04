@@ -1,0 +1,61 @@
+.nav-pills {
+    background-color: #f5f5f5;
+    padding: 0 !important;
+    margin-left: 0px;
+}
+.nav-pills .nav-link {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0;
+    width: 100%;
+    transition: all 500ms;
+}
+.nav-pills .nav-tab {
+    background: #121837 !important;
+    color: #ffffff !important;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: rgba(18, 24, 55, 0.8) !important;
+}
+.nav-pills .nav-tab:focus, .nav-tab:hover {
+    background-color: rgba(18, 24, 55, 0.8) !important;
+}
+.basetheme_options h2 {
+    background-color: #121837;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.basetheme_options .credits {
+	position: absolute;
+    bottom: 30px;
+    width: calc(100% - 20px);
+    padding: 0;
+}
+.basetheme_options .credits .basetheme-right {
+	float: left;
+	font-size: 14px;
+}
+.basetheme_options .credits .basetheme-author {
+	float: right;
+	font-size: 14px;
+}
+#wpfooter {
+    z-index: -1 !important;
+}
+.active-btn-save {
+    position: fixed;
+    right: 20px;
+    top: 50px;
+    z-index: 1;
+}
+#titlediv #title-prompt-text {
+    padding: 2px 10px;
+}
+li#menu-posts-blocks ul {
+    background-color: rgba(18, 24, 55, 0.8) !important;
+}
+li#menu-posts-blocks a.wp-has-current-submenu {
+    background: #3f445d !important;
+}

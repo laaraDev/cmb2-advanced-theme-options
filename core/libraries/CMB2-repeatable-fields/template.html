@@ -1,0 +1,385 @@
+<h4>A single field with one row present by default</h4>
+<table class="table table-striped table-bordered">
+   <thead>
+      <tr>
+         <td width="10%" colspan="4"><span class="add btn btn-success">Add</span></td>
+      </tr>
+   </thead>
+   <tbody class="container ui-sortable" data-rf-row-count="1">
+      <tr class="template row" style="display: none;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1" disabled="">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="10%">Location</td>
+         <td width="40%">
+            <input type="text" name="location[{{row-count-placeholder}}]" class="form-control" value="" disabled="">
+            <textarea name="collection[{{row-count-placeholder}}][items][{{row-count-placeholder}}][description]" class="form-control editor" disabled="">test</textarea>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+      <tr class="row">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="10%">Location</td>
+         <td width="40%">
+            <input type="text" name="location[0]" class="form-control">
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+   </tbody>
+</table>
+<hr>
+<h4>A single field with no rows present by default</h4>
+<table class="table table-striped table-bordered">
+   <thead>
+      <tr>
+         <td width="10%" colspan="4"><span class="add btn btn-success">Add</span></td>
+      </tr>
+   </thead>
+   <tbody class="container ui-sortable" data-rf-row-count="0">
+      <tr class="template row" style="display: none;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1" disabled="">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="10%">Price</td>
+         <td width="40%">
+            <input type="text" name="price[{{row-count-placeholder}}]" class="form-control" disabled="">
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+   </tbody>
+</table>
+<hr>
+<h4>A group of fields with one row present by default</h4>
+<table class="table table-striped table-bordered">
+   <thead>
+      <tr>
+         <td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+      </tr>
+   </thead>
+   <tbody class="container ui-sortable" data-rf-row-count="1">
+      <tr class="template row" style="display: none;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1" disabled="">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>URL</dt>
+               <dd><input type="text" name="entry[{{row-count-placeholder}}][url]" class="form-control" disabled=""></dd>
+               <dt>Title</dt>
+               <dd><input type="text" name="entry[{{row-count-placeholder}}][title]" class="form-control" disabled=""></dd>
+               <dt>Image</dt>
+               <dd><input type="text" name="entry[{{row-count-placeholder}}][image]" class="form-control" disabled=""></dd>
+            </dl>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+      <tr class="row">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>URL</dt>
+               <dd><input type="text" name="entry[0][url]" class="form-control"></dd>
+               <dt>Title</dt>
+               <dd><input type="text" name="entry[0][title]" class="form-control"></dd>
+               <dt>Image</dt>
+               <dd><input type="text" name="entry[0][image]" class="form-control"></dd>
+            </dl>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+   </tbody>
+</table>
+<hr>
+<h4>A group of fields which has two rows present by default with pre-populated values</h4>
+<table class="table table-striped table-bordered">
+   <thead>
+      <tr>
+         <td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+      </tr>
+   </thead>
+   <tbody class="container ui-sortable" data-rf-row-count="2">
+      <tr class="template row" style="display: none;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1" disabled="">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>URL</dt>
+               <dd><input type="text" name="grouped-entry[{{row-count-placeholder}}][url]" class="form-control" disabled=""></dd>
+               <dt>Title</dt>
+               <dd><input type="text" name="grouped-entry[{{row-count-placeholder}}][title]" class="form-control" disabled=""></dd>
+               <dt>Image</dt>
+               <dd><input type="text" name="grouped-entry[{{row-count-placeholder}}][image]" class="form-control" disabled=""></dd>
+            </dl>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+      <tr class="row">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>URL</dt>
+               <dd><input type="text" name="grouped-entry[0][url]" class="form-control" value="http://www.rhyzz.com"></dd>
+               <dt>Title</dt>
+               <dd><input type="text" name="grouped-entry[0][title]" class="form-control" value="Rhyzz"></dd>
+               <dt>Image</dt>
+               <dd><input type="text" name="grouped-entry[0][image]" class="form-control" value="http://www.rhyzz.com/images/rhyzz.png"></dd>
+            </dl>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+      <tr class="row">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>URL</dt>
+               <dd><input type="text" name="grouped-entry[1][url]" class="form-control" value="http://www.rhyzz.com/repeatable-fields.html"></dd>
+               <dt>Title</dt>
+               <dd><input type="text" name="grouped-entry[1][title]" class="form-control" value="Fields Framework"></dd>
+               <dt>Image</dt>
+               <dd><input type="text" name="grouped-entry[1][image]" class="form-control" value="http://www.rhyzz.com/images/rhyzz.png"></dd>
+            </dl>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+   </tbody>
+</table>
+<hr>
+<h4>A nested group (i.e. a group within a group) of fields with no rows present by default</h4>
+<table class="table table-striped table-bordered">
+   <thead>
+      	<tr>
+        	<td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+      	</tr>
+   </thead>
+   <tbody class="container ui-sortable" data-rf-row-count="2">
+      <tr class="template row" style="display: none;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1" disabled="">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>Heading</dt>
+               <dd><input type="text" name="collection[{{row-count-placeholder}}][heading]" class="form-control" disabled=""></dd>
+            </dl>
+            <table class="table table-striped table-bordered">
+               <thead>
+	                <tr>
+	                    <td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+	                </tr>
+               </thead>
+               <tbody class="container ui-sortable" style="" data-rf-row-count="0">
+                  <tr class="template row" style="display: none;">
+                     <td width="10%">
+                        <span class="move btn btn-info">↕</span>
+                        <span class="move-up btn btn-info">↑</span>
+                        <input type="text" class="move-steps" size="1" value="1" disabled="">
+                        <span class="move-down btn btn-info">↓</span>
+                     </td>
+                     <td width="80%">
+                        <dl>
+                           <dt>Title</dt>
+                           <dd><input type="text" name="collection[{{row-count-placeholder}}][items][{{row-count-placeholder}}][title]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Year</dt>
+                           <dd><input type="text" name="collection[{{row-count-placeholder}}][items][{{row-count-placeholder}}][year]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Description</dt>
+                           <dd><textarea name="collection[{{row-count-placeholder}}][items][{{row-count-placeholder}}][description]" class="form-control editor" disabled="">test</textarea></dd>
+                        </dl>
+                     </td>
+                     <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+                  </tr>
+               </tbody>
+            </table>
+        </td>
+        <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+      <!-- <tr class="row" style="display: table-row;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>Heading</dt>
+               <dd><input type="text" name="collection[0][heading]" class="form-control"></dd>
+            </dl>
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+                  </tr>
+               </thead>
+               <tbody class="container ui-sortable" style="" data-rf-row-count="3">
+                  <tr class="template row" style="display: none;">
+                     <td width="10%">
+                        <span class="move btn btn-info">↕</span>
+                        <span class="move-up btn btn-info">↑</span>
+                        <input type="text" class="move-steps" size="1" value="1" disabled="">
+                        <span class="move-down btn btn-info">↓</span>
+                     </td>
+                     <td width="80%">
+                        <dl>
+                           <dt>Title</dt>
+                           <dd><input type="text" name="collection[0][items][{{row-count-placeholder}}][title]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Year</dt>
+                           <dd><input type="text" name="collection[0][items][{{row-count-placeholder}}][year]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Description</dt>
+                           <dd><textarea name="collection[0][items][{{row-count-placeholder}}][description]" class="form-control editor" disabled="">test</textarea></dd>
+                        </dl>
+                     </td>
+                     <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+                  </tr>
+                  <tr class="row" style="display: table-row;">
+                     <td width="10%">
+                        <span class="move btn btn-info">↕</span>
+                        <span class="move-up btn btn-info">↑</span>
+                        <input type="text" class="move-steps" size="1" value="1">
+                        <span class="move-down btn btn-info">↓</span>
+                     </td>
+                     <td width="80%">
+                        <dl>
+                           <dt>Title</dt>
+                           <dd><input type="text" name="collection[0][items][2][title]" class="form-control"></dd>
+                        </dl>
+                        <dl>
+                           <dt>Year</dt>
+                           <dd><input type="text" name="collection[0][items][2][year]" class="form-control"></dd>
+                        </dl>
+                        <dl>
+                           <dt>Description</dt>
+                           <dd><textarea name="collection[0][items][2][description]" class="form-control editor">test</textarea></dd>
+                        </dl>
+                     </td>
+                     <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr>
+      <tr class="row" style="display: table-row;">
+         <td width="40%">
+            <span class="move btn btn-info">↕</span>
+            <span class="move-up btn btn-info">↑</span>
+            <input type="text" class="move-steps" size="1" value="1">
+            <span class="move-down btn btn-info">↓</span>
+         </td>
+         <td width="80%">
+            <dl>
+               <dt>Heading</dt>
+               <dd><input type="text" name="collection[1][heading]" class="form-control"></dd>
+            </dl>
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+                  </tr>
+               </thead>
+               <tbody class="container ui-sortable" style="" data-rf-row-count="0">
+                  <tr class="template row" style="display: none;">
+                     <td width="10%">
+                        <span class="move btn btn-info">↕</span>
+                        <span class="move-up btn btn-info">↑</span>
+                        <input type="text" class="move-steps" size="1" value="1" disabled="">
+                        <span class="move-down btn btn-info">↓</span>
+                     </td>
+                     <td width="80%">
+                        <dl>
+                           <dt>Title</dt>
+                           <dd><input type="text" name="collection[1][items][{{row-count-placeholder}}][title]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Year</dt>
+                           <dd><input type="text" name="collection[1][items][{{row-count-placeholder}}][year]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Description</dt>
+                           <dd><textarea name="collection[1][items][{{row-count-placeholder}}][description]" class="form-control editor" disabled="">test</textarea></dd>
+                        </dl>
+                        <table class="table table-striped table-bordered">
+               <thead>
+                  <tr>
+                     <td width="10%" colspan="3"><span class="add btn btn-success">Add</span></td>
+                  </tr>
+               </thead>
+               <tbody class="container ui-sortable" style="" data-rf-row-count="0">
+                  <tr class="template row" style="display: none;">
+                     <td width="10%">
+                        <span class="move btn btn-info">↕</span>
+                        <span class="move-up btn btn-info">↑</span>
+                        <input type="text" class="move-steps" size="1" value="1" disabled="">
+                        <span class="move-down btn btn-info">↓</span>
+                     </td>
+                     <td width="80%">
+                        <dl>
+                           <dt>Title</dt>
+                           <dd><input type="text" name="collection[1][items][{{row-count-placeholder}}][title]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Year</dt>
+                           <dd><input type="text" name="collection[1][items][{{row-count-placeholder}}][year]" class="form-control" disabled=""></dd>
+                        </dl>
+                        <dl>
+                           <dt>Description</dt>
+                           <dd><textarea name="collection[1][items][{{row-count-placeholder}}][description]" class="form-control editor" disabled="">test</textarea></dd>
+                        </dl>
+                     </td>
+                     <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+                  </tr>
+               </tbody>
+            </table>
+                     </td>
+                     <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+         <td width="10%"><span class="remove btn btn-danger">Remove</span></td>
+      </tr> -->
+   </tbody>
+</table>
