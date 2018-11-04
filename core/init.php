@@ -154,16 +154,9 @@
 		 * This function is hooked into tgmpa_init, which is fired within the
 		 * TGM_Plugin_Activation class constructor.
 		 */
-	    static function required_plugins()
-	    {
-	    	// add_action( 'tgmpa_register', $this->tgm_required_plugins() );
-	    }
 
 	    function tgm_required_plugins()
 	    {
-	  //   	if (defined( 'WPB_VC_VERSION' ) && file_exists( get_template_directory() . '/plugins/js_composer.zip' ) ) {
-			//     require_once(get_template_directory() . '/includes/ninzio_vc.php' );
-			// }
 			/**
 			 * Array of plugin arrays. Required keys are name and slug.
 			 * If the source is NOT from the .org repo, then source is also required.

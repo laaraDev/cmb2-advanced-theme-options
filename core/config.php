@@ -75,7 +75,7 @@ class Config
 
 	static function core_dir_uri()
 	{
-		return get_template_directory_uri() . '/inc/core/';
+		return get_template_directory_uri() . '/core/';
 	}
 
 	static function core_assets_css($filename = 'basetheme')
