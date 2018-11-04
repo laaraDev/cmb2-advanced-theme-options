@@ -5,8 +5,8 @@
 # Blocks loader init
 # add this to you theme functions to initialize theme options
 
-<code>
-    <p>if ( !class_exists( 'BlocksLoaderInit' ) && file_exists( dirname( __DIR__ ) . '\inc\core\init.php' ) ) {</p>
-    <p>require_once( dirname( __DIR__ ) . '\inc\core\init.php' );</p>
-    <p>}</p>
-</code>
+<p>
+    <code>if ( !class_exists( 'BlocksLoaderInit' ) && file_exists( dirname( __DIR__ ) . '\inc\core\init.php' ) ) {</code>
+    <code>require_once( dirname( __DIR__ ) . '\inc\core\init.php' );</code>
+    <code>}</code>
+</p>
