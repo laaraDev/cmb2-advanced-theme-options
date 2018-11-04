@@ -13,7 +13,7 @@ if ( !class_exists( 'BlocksLoaderInit' ) && file_exists( dirname( __DIR__ ) . '\
 - Create block parameter from Blocks post type.
 For example your block name : Contact
 - Create file called contact.php in blocks folder (If your block name contain space for exemple : Contact us the file name will be contact_us.php).
-- Block parameter will be disponible in global variable : $BlockContact (If your block name contain space for exemple : Contact us the block parameter will be disponible in global variable : $BlockCcontact_us).
+- Block parameter will be disponible in global variable : $BlockContact (If your block name contain space for exemple : Contact us the block parameter will be disponible in global variable : $BlockContact_us).
 You can load this block anywhere you want just like :
 
 ```
